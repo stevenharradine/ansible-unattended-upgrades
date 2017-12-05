@@ -1,0 +1,19 @@
+---
+- name: install packages | unattended-upgrades
+  apt:
+    name: "{{ item }}"
+    update_cache: yes
+  with_items:
+    - unattended-upgrades
+    - apt-listchanges
+
+- name: copy configuration | unattended-upgrades
+  template:
+    src: "etc/apt/apt.conf.d/{{ item }}"
+    dest: /apt/apt.conf.d/
+    owner: root
+    group: root
+    mode: 0644
+  with_items:
+    - 20auto-upgrades
+    - 50unattended-upgrades

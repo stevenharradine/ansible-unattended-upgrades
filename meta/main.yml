@@ -1,0 +1,16 @@
+---
+dependencies: []
+galaxy_info:
+  author: "Steven Harradine"
+  company: "TELUS digital"
+  categories:
+    - security
+  description: "Sets up unattended upgrades on systems to make sure they stay up to date"
+  min_ansible_version: 1.2
+  platforms:
+    - name: Ubuntu
+      versions:
+        - lucid
+        - precise
+        - trusty
+        - utopic
