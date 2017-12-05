@@ -10,7 +10,7 @@
 - name: copy configuration | unattended-upgrades
   template:
     src: "etc/apt/apt.conf.d/{{ item }}"
-    dest: /apt/apt.conf.d/
+    dest: /etc/apt/apt.conf.d/
     owner: root
     group: root
     mode: 0644
