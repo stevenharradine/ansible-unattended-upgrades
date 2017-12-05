@@ -8,7 +8,10 @@ Sets up unattended upgrades on systems to make sure they stay up to date.
 Tunables
 --------
 * `unattended_upgrades_package_blacklist` (enumerated list) - (updates|proposed|backports) Automatically upgrade packages from these (origin:archive) pairs can have the values (Please note security updates and Extended Security Maintenance (ESM) are hard coded in the configuration file)
-* `unattended_upgrades_allowed_origins` (list) - List of packages to not update 
+* `unattended_upgrades_allowed_origins` (list) - List of packages to not update
+* `unattended_upgrades_update_package_lists` - "apt-get update" automatically every n-days (0=disable)
+* `unattended_upgrades_autoclean_interval` - "apt-get autoclean" every n-days (0=disable)
+* `unattended_upgrades_unattended_upgrade` - "unattended-upgrade" security upgrade script every n-days (0=disabled)
 
 Example Playbook
 ----------------
