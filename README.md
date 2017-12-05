@@ -17,7 +17,7 @@ Example Playbook
 ----------------
     - hosts: servers
       roles:
-         - role: stevenharradine.unattended-upgrades
+         - role: telusdigital.unattended-upgrades
 
 
 Contributors
