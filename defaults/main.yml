@@ -2,6 +2,6 @@
 unattended_upgrades_package_blacklist: []
 unattended_upgrades_allowed_origins: []
 
-unattended_upgrades_update_package_lists: "1";
-unattended_upgrades_autoclean_interval:  "7";
-unattended_upgrades_unattended_upgrade: "1";
+unattended_upgrades_update_package_lists: "1"
+unattended_upgrades_autoclean_interval:  "7"
+unattended_upgrades_unattended_upgrade: "1"
